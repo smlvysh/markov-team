@@ -180,12 +180,6 @@
   .h-\[60px\] {
     height: 60px;
   }
-  .w-\[13px\] {
-    width: 13px;
-  }
-  .w-\[70\%\] {
-    width: 70%;
-  }
   .w-\[170px\] {
     width: 170px;
   }
@@ -194,18 +188,6 @@
   }
   .w-\[900px\] {
     width: 900px;
-  }
-  .w-\[1300px\] {
-    width: 1300px;
-  }
-  .w-\[1366px\] {
-    width: 1366px;
-  }
-  .w-\[px\] {
-    width: px;
-  }
-  .w-px {
-    width: 1px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -234,9 +216,6 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-end {
-    justify-content: flex-end;
-  }
   .gap-\[5px\] {
     gap: 5px;
   }
@@ -248,9 +227,6 @@
   }
   .gap-\[30px\] {
     gap: 30px;
-  }
-  .gap-\[50px\] {
-    gap: 50px;
   }
   .gap-\[70px\] {
     gap: 70px;
@@ -287,9 +263,6 @@
   .px-\[50px\] {
     padding-inline: 50px;
   }
-  .px-\[50x\] {
-    padding-inline: 50x;
-  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -305,17 +278,9 @@
   .text-\[24px\] {
     font-size: 24px;
   }
-  .font-\[300\] {
-    --tw-font-weight: 300;
-    font-weight: 300;
-  }
   .font-\[400\] {
     --tw-font-weight: 400;
     font-weight: 400;
-  }
-  .font-\[400px\] {
-    --tw-font-weight: 400px;
-    font-weight: 400px;
   }
   .font-\[500\] {
     --tw-font-weight: 500;
@@ -333,6 +298,11 @@
       flex-direction: column;
     }
   }
+  .max-xl\:gap-\[20px\] {
+    @media (width < 80rem) {
+      gap: 20px;
+    }
+  }
   .max-lg\:block {
     @media (width < 64rem) {
       display: block;
@@ -343,29 +313,9 @@
       display: none;
     }
   }
-  .max-lg\:w-\[700px\] {
-    @media (width < 64rem) {
-      width: 700px;
-    }
-  }
-  .max-lg\:justify-center {
-    @media (width < 64rem) {
-      justify-content: center;
-    }
-  }
   .max-lg\:gap-\[5px\] {
     @media (width < 64rem) {
       gap: 5px;
-    }
-  }
-  .max-lg\:gap-\[10px\] {
-    @media (width < 64rem) {
-      gap: 10px;
-    }
-  }
-  .max-lg\:gap-\[30px\] {
-    @media (width < 64rem) {
-      gap: 30px;
     }
   }
   .max-lg\:text-\[16px\] {
@@ -388,21 +338,6 @@
       height: 30px;
     }
   }
-  .max-sm\:w-\[15\] {
-    @media (width < 40rem) {
-      width: 15;
-    }
-  }
-  .max-sm\:w-\[20px\] {
-    @media (width < 40rem) {
-      width: 20px;
-    }
-  }
-  .max-sm\:w-\[150px\] {
-    @media (width < 40rem) {
-      width: 150px;
-    }
-  }
   .max-sm\:w-\[200px\] {
     @media (width < 40rem) {
       width: 200px;
@@ -411,6 +346,11 @@
   .max-sm\:flex-col {
     @media (width < 40rem) {
       flex-direction: column;
+    }
+  }
+  .max-sm\:items-center {
+    @media (width < 40rem) {
+      align-items: center;
     }
   }
   .max-sm\:justify-center {
@@ -423,9 +363,24 @@
       gap: 10px;
     }
   }
+  .max-sm\:pt-\[30px\] {
+    @media (width < 40rem) {
+      padding-top: 30px;
+    }
+  }
+  .max-sm\:text-center {
+    @media (width < 40rem) {
+      text-align: center;
+    }
+  }
   .max-sm\:text-\[16px\] {
     @media (width < 40rem) {
       font-size: 16px;
+    }
+  }
+  .max-sm\:text-\[18px\] {
+    @media (width < 40rem) {
+      font-size: 18px;
     }
   }
   .max-sm\:text-\[20px\] {
@@ -437,6 +392,7 @@
 .container1 {
   width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 @property --tw-rotate-x {
   syntax: "*";
